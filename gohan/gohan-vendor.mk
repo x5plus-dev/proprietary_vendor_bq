@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/bq/gohan/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/bq/gohan/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/bq/gohan/proprietary/bin/wcnss_service:system/bin/wcnss_service \
     vendor/bq/gohan/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/bq/gohan/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/bq/gohan/proprietary/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Bluetooth_cal.acdb \
@@ -115,6 +114,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
     vendor/bq/gohan/proprietary/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
     vendor/bq/gohan/proprietary/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
+    vendor/bq/gohan/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
     vendor/bq/gohan/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     vendor/bq/gohan/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
     vendor/bq/gohan/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
@@ -147,10 +147,13 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/bq/gohan/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/bq/gohan/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
+    vendor/bq/gohan/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/bq/gohan/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/bq/gohan/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/gohan/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
     vendor/bq/gohan/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
     vendor/bq/gohan/proprietary/lib/hw/gxfingerprint.default.so:system/lib/hw/gxfingerprint.default.so \
+    vendor/bq/gohan/proprietary/lib/hw/power.qcom.so:system/lib/hw/power.qcom.so \
     vendor/bq/gohan/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
     vendor/bq/gohan/proprietary/lib/libfp_client.so:system/lib/libfp_client.so \
     vendor/bq/gohan/proprietary/lib/libfpnav.so:system/lib/libfpnav.so \
@@ -180,22 +183,11 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/hw/activity_recognition.msm8952.so:system/vendor/lib/hw/activity_recognition.msm8952.so \
     vendor/bq/gohan/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/bq/gohan/proprietary/vendor/lib/hw/gatekeeper.msm8952.so:system/vendor/lib/hw/gatekeeper.msm8952.so \
-    vendor/bq/gohan/proprietary/vendor/lib/hw/keystore.msm8952.so:system/vendor/lib/hw/keystore.msm8952.so \
     vendor/bq/gohan/proprietary/vendor/lib/hw/sound_trigger.primary.msm8952.so:system/vendor/lib/hw/sound_trigger.primary.msm8952.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_ad5816g.so:system/vendor/lib/libactuator_ad5816g.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_ad5823.so:system/vendor/lib/libactuator_ad5823.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_bu64244gwz.so:system/vendor/lib/libactuator_bu64244gwz.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_bu64297.so:system/vendor/lib/libactuator_bu64297.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9716.so:system/vendor/lib/libactuator_dw9716.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9761b.so:system/vendor/lib/libactuator_dw9761b.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9800w_cmb087qr.so:system/vendor/lib/libactuator_dw9800w_cmb087qr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libactuator_lc898122.so:system/vendor/lib/libactuator_lc898122.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_lc898212xd.so:system/vendor/lib/libactuator_lc898212xd.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:system/vendor/lib/libactuator_rohm_bu64243gwz.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
@@ -415,20 +407,13 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_csidtg.so:system/vendor/lib/libmmcamera_csidtg.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_dcrf_lib.so:system/vendor/lib/libmmcamera_dcrf_lib.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_dw9761b_eeprom.so:system/vendor/lib/libmmcamera_dw9761b_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_eeprom_util.so:system/vendor/lib/libmmcamera_eeprom_util.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_eztune_module.so:system/vendor/lib/libmmcamera_eztune_module.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx214.so:system/vendor/lib/libmmcamera_imx214.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx219_cmb104.so:system/vendor/lib/libmmcamera_imx219_cmb104.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx219_d8n03d.so:system/vendor/lib/libmmcamera_imx219_d8n03d.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx230.so:system/vendor/lib/libmmcamera_imx230.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so:system/vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx258.so:system/vendor/lib/libmmcamera_imx258.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx298_cmb087qr.so:system/vendor/lib/libmmcamera_imx298_cmb087qr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_imx298.so:system/vendor/lib/libmmcamera_imx298.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_isp_abcc44.so:system/vendor/lib/libmmcamera_isp_abcc44.so \
@@ -465,43 +450,16 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_isp_sce40.so:system/vendor/lib/libmmcamera_isp_sce40.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:system/vendor/lib/libmmcamera_isp_sub_module.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_isp_wb40.so:system/vendor/lib/libmmcamera_isp_wb40.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_le2464c_eeprom.so:system/vendor/lib/libmmcamera_le2464c_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_le2464c_master_eeprom.so:system/vendor/lib/libmmcamera_le2464c_master_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_llvd.so:system/vendor/lib/libmmcamera_llvd.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov13850_polaris.so:system/vendor/lib/libmmcamera_ov13850_polaris.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov13850_q13v06k.so:system/vendor/lib/libmmcamera_ov13850_q13v06k.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov13850.so:system/vendor/lib/libmmcamera_ov13850.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov2685_scv3b4035.so:system/vendor/lib/libmmcamera_ov2685_scv3b4035.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov2685.so:system/vendor/lib/libmmcamera_ov2685.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov4688_eeprom.so:system/vendor/lib/libmmcamera_ov4688_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov4688.so:system/vendor/lib/libmmcamera_ov4688.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov5670_polaris.so:system/vendor/lib/libmmcamera_ov5670_polaris.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov5670.so:system/vendor/lib/libmmcamera_ov5670.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov8865.so:system/vendor/lib/libmmcamera_ov8865.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_s5k3m2xm_flipmirror.so:system/vendor/lib/libmmcamera_s5k3m2xm_flipmirror.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_s5k3m2xm.so:system/vendor/lib/libmmcamera_s5k3m2xm.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_s5k3m2xx.so:system/vendor/lib/libmmcamera_s5k3m2xx.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_semco_cat24c64_eeprom.so:system/vendor/lib/libmmcamera_semco_cat24c64_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:system/vendor/lib/libmmcamera_sonyimx135_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sony_imx214_eeprom.so:system/vendor/lib/libmmcamera_sony_imx214_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sunny_8865_eeprom.so:system/vendor/lib/libmmcamera_sunny_8865_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sunny_imx219_d8n03d_eeprom.so:system/vendor/lib/libmmcamera_sunny_imx219_d8n03d_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sw_tnr.so:system/vendor/lib/libmmcamera_sw_tnr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_truly_cma481_eeprom.so:system/vendor/lib/libmmcamera_truly_cma481_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_truly_imx219_cmb104_eeprom.so:system/vendor/lib/libmmcamera_truly_imx219_cmb104_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_truly_imx298_cmb087qr_eeprom.so:system/vendor/lib/libmmcamera_truly_imx298_cmb087qr_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
@@ -621,6 +579,8 @@ PRODUCT_PACKAGES += \
     libloc_ds_api \
     libtime_genoff \
     embms \
+    fastdormancy \
+    QtiTelephonyService \
     shutdownlistener \
     TimeService \
     CNEService \

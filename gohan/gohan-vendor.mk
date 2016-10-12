@@ -44,6 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/bq/gohan/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/bq/gohan/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/bq/gohan/proprietary/bin/wcnss_service:system/bin/wcnss_service \
     vendor/bq/gohan/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/bq/gohan/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/bq/gohan/proprietary/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/msm8952-tomtom-snd-card/MTP_WCD9330_Bluetooth_cal.acdb \
@@ -129,9 +130,14 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/firmware/venus-v1.b04:system/etc/firmware/venus-v1.b04 \
     vendor/bq/gohan/proprietary/etc/firmware/venus-v1.mbn:system/etc/firmware/venus-v1.mbn \
     vendor/bq/gohan/proprietary/etc/firmware/venus-v1.mdt:system/etc/firmware/venus-v1.mdt \
+    vendor/bq/gohan/proprietary/etc/ftm_test_config_msm8976-tasha-skun-snd-card:system/etc/ftm_test_config_msm8976-tasha-skun-snd-card \
+    vendor/bq/gohan/proprietary/etc/ftm_test_config_msm8976-tasha-snd-card:system/etc/ftm_test_config_msm8976-tasha-snd-card \
+    vendor/bq/gohan/proprietary/etc/ftm_test_config_wcd9335:system/etc/ftm_test_config_wcd9335 \
     vendor/bq/gohan/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/bq/gohan/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
@@ -139,10 +145,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/bq/gohan/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/bq/gohan/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/bq/gohan/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/bq/gohan/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/bq/gohan/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/bq/gohan/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
+    vendor/bq/gohan/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/bq/gohan/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/bq/gohan/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/bq/gohan/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
@@ -155,6 +163,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/hw/gxfingerprint.default.so:system/lib/hw/gxfingerprint.default.so \
     vendor/bq/gohan/proprietary/lib/hw/power.qcom.so:system/lib/hw/power.qcom.so \
     vendor/bq/gohan/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
+    vendor/bq/gohan/proprietary/lib/libcryptfs_hw.so:system/lib/libcryptfs_hw.so \
     vendor/bq/gohan/proprietary/lib/libfp_client.so:system/lib/libfp_client.so \
     vendor/bq/gohan/proprietary/lib/libfpnav.so:system/lib/libfpnav.so \
     vendor/bq/gohan/proprietary/lib/libfpservice.so:system/lib/libfpservice.so \
@@ -163,16 +172,19 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/gohan/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/gohan/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
+    vendor/bq/gohan/proprietary/lib/libomadrmutils_jni.so:system/lib/libomadrmutils_jni.so \
     vendor/bq/gohan/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/bq/gohan/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/bq/gohan/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/bq/gohan/proprietary/priv-app/xtra_t_app/xtra_t_app.apk:system/priv-app/xtra_t_app/xtra_t_app.apk \
     vendor/bq/gohan/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/bq/gohan/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
+    vendor/bq/gohan/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
     vendor/bq/gohan/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/bq/gohan/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/bq/gohan/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/bq/gohan/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/bq/gohan/proprietary/vendor/lib/drm/libomadrmengine.so:system/vendor/lib/drm/libomadrmengine.so \
     vendor/bq/gohan/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/bq/gohan/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/bq/gohan/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -183,11 +195,22 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/hw/activity_recognition.msm8952.so:system/vendor/lib/hw/activity_recognition.msm8952.so \
     vendor/bq/gohan/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/bq/gohan/proprietary/vendor/lib/hw/gatekeeper.msm8952.so:system/vendor/lib/hw/gatekeeper.msm8952.so \
+    vendor/bq/gohan/proprietary/vendor/lib/hw/keystore.msm8952.so:system/vendor/lib/hw/keystore.msm8952.so \
     vendor/bq/gohan/proprietary/vendor/lib/hw/sound_trigger.primary.msm8952.so:system/vendor/lib/hw/sound_trigger.primary.msm8952.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_ad5816g.so:system/vendor/lib/libactuator_ad5816g.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_ad5823.so:system/vendor/lib/libactuator_ad5823.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_bu64244gwz.so:system/vendor/lib/libactuator_bu64244gwz.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_bu64297.so:system/vendor/lib/libactuator_bu64297.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9716.so:system/vendor/lib/libactuator_dw9716.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9761b.so:system/vendor/lib/libactuator_dw9761b.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9800w_cmb087qr.so:system/vendor/lib/libactuator_dw9800w_cmb087qr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libactuator_lc898122.so:system/vendor/lib/libactuator_lc898122.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_lc898212xd.so:system/vendor/lib/libactuator_lc898212xd.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:system/vendor/lib/libactuator_rohm_bu64243gwz.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
@@ -371,6 +394,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/bq/gohan/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/bq/gohan/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
+    vendor/bq/gohan/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
+    vendor/bq/gohan/proprietary/vendor/lib/liblistensoundmodel2.so:system/vendor/lib/liblistensoundmodel2.so \
     vendor/bq/gohan/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
     vendor/bq/gohan/proprietary/vendor/lib/libllvd_sw_tnr.so:system/vendor/lib/libllvd_sw_tnr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
@@ -549,6 +574,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/bq/gohan/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
     vendor/bq/gohan/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libtzplayready.so:system/vendor/lib/libtzplayready.so \
     vendor/bq/gohan/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/bq/gohan/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/bq/gohan/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
@@ -563,6 +590,11 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/bq/gohan/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/bq/gohan/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/bq/gohan/proprietary/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so:system/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so \
+    vendor/bq/gohan/proprietary/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so:system/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so \
+    vendor/bq/gohan/proprietary/vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so:system/vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so \
+    vendor/bq/gohan/proprietary/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so:system/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so \
+    vendor/bq/gohan/proprietary/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so:system/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so \
     vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
@@ -587,6 +619,9 @@ PRODUCT_PACKAGES += \
     com.qualcomm.location \
     qcrilmsgtunnel \
     QtiTetherService \
+    colorservice \
     imssettings \
+    com.google.widevine.software.drm \
+    ConnectivityExt \
     qcnvitems \
     qcrilhook

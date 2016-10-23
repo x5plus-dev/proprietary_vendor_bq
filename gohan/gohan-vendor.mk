@@ -16,12 +16,18 @@
 
 PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/bin/adsprpcd:system/bin/adsprpcd \
+    vendor/bq/gohan/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
+    vendor/bq/gohan/proprietary/bin/audiod:system/bin/audiod \
     vendor/bq/gohan/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/bq/gohan/proprietary/bin/cnd:system/bin/cnd \
     vendor/bq/gohan/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/bq/gohan/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/bq/gohan/proprietary/bin/dun-server:system/bin/dun-server \
     vendor/bq/gohan/proprietary/bin/fingerprintd:system/bin/fingerprintd \
+    vendor/bq/gohan/proprietary/bin/ftmdaemon:system/bin/ftmdaemon \
+    vendor/bq/gohan/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
     vendor/bq/gohan/proprietary/bin/gx_fpd:system/bin/gx_fpd \
+    vendor/bq/gohan/proprietary/bin/hal_proxy_daemon:system/bin/hal_proxy_daemon \
     vendor/bq/gohan/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/bq/gohan/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
     vendor/bq/gohan/proprietary/bin/imscmservice:system/bin/imscmservice \
@@ -37,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/bq/gohan/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/bq/gohan/proprietary/bin/pm-service:system/bin/pm-service \
+    vendor/bq/gohan/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/bq/gohan/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/bq/gohan/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/bq/gohan/proprietary/bin/radish:system/bin/radish \
@@ -161,22 +168,35 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
     vendor/bq/gohan/proprietary/lib/hw/gxfingerprint.default.so:system/lib/hw/gxfingerprint.default.so \
     vendor/bq/gohan/proprietary/lib/libcryptfs_hw.so:system/lib/libcryptfs_hw.so \
+    vendor/bq/gohan/proprietary/lib/libdhcpcd.so:system/lib/libdhcpcd.so \
     vendor/bq/gohan/proprietary/lib/libfp_client.so:system/lib/libfp_client.so \
     vendor/bq/gohan/proprietary/lib/libfpnav.so:system/lib/libfpnav.so \
     vendor/bq/gohan/proprietary/lib/libfpservice.so:system/lib/libfpservice.so \
+    vendor/bq/gohan/proprietary/lib/libGLESv3.so:system/lib/libGLESv3.so \
     vendor/bq/gohan/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/bq/gohan/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
+    vendor/bq/gohan/proprietary/lib/libipanat.so:system/lib/libipanat.so \
+    vendor/bq/gohan/proprietary/lib/libminui.so:system/lib/libminui.so \
     vendor/bq/gohan/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/gohan/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+    vendor/bq/gohan/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
     vendor/bq/gohan/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
+    vendor/bq/gohan/proprietary/lib/libnetfilter_conntrack.so:system/lib/libnetfilter_conntrack.so \
+    vendor/bq/gohan/proprietary/lib/libnfnetlink.so:system/lib/libnfnetlink.so \
     vendor/bq/gohan/proprietary/lib/libomadrmutils_jni.so:system/lib/libomadrmutils_jni.so \
+    vendor/bq/gohan/proprietary/lib/libOmxSwVencHevc.so:system/lib/libOmxSwVencHevc.so \
     vendor/bq/gohan/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/bq/gohan/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/bq/gohan/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
+    vendor/bq/gohan/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
     vendor/bq/gohan/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
+    vendor/bq/gohan/proprietary/lib/libwifi-hal-qcom.so:system/lib/libwifi-hal-qcom.so \
     vendor/bq/gohan/proprietary/priv-app/xtra_t_app/xtra_t_app.apk:system/priv-app/xtra_t_app/xtra_t_app.apk \
+    vendor/bq/gohan/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
     vendor/bq/gohan/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/bq/gohan/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/bq/gohan/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
+    vendor/bq/gohan/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/bq/gohan/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/bq/gohan/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/bq/gohan/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
@@ -196,6 +216,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/hw/sound_trigger.primary.msm8952.so:system/vendor/lib/hw/sound_trigger.primary.msm8952.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/bq/gohan/proprietary/vendor/lib/libactuator_ad5816g.so:system/vendor/lib/libactuator_ad5816g.so \
     vendor/bq/gohan/proprietary/vendor/lib/libactuator_ad5823.so:system/vendor/lib/libactuator_ad5823.so \
@@ -216,7 +237,10 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
     vendor/bq/gohan/proprietary/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
     vendor/bq/gohan/proprietary/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libassetsverifier.so:system/vendor/lib/libassetsverifier.so \
     vendor/bq/gohan/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libaudioparsers.so:system/vendor/lib/libaudioparsers.so \
     vendor/bq/gohan/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/bq/gohan/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/bq/gohan/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
@@ -225,6 +249,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/bq/gohan/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
     vendor/bq/gohan/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libChamomilePA.so:system/vendor/lib/libChamomilePA.so \
     vendor/bq/gohan/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
     vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx219_cmb104_a3_default_preview.so:system/vendor/lib/libchromatix_imx219_cmb104_a3_default_preview.so \
     vendor/bq/gohan/proprietary/vendor/lib/libchromatix_imx219_cmb104_a3_default_video.so:system/vendor/lib/libchromatix_imx219_cmb104_a3_default_video.so \
@@ -346,6 +371,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
     vendor/bq/gohan/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/bq/gohan/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libCommandSvc.so:system/vendor/lib/libCommandSvc.so \
     vendor/bq/gohan/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/bq/gohan/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/bq/gohan/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
@@ -362,12 +388,14 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/bq/gohan/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/bq/gohan/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     vendor/bq/gohan/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/bq/gohan/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/bq/gohan/proprietary/vendor/lib/libFidoCryptoJNI.so:system/vendor/lib/libFidoCryptoJNI.so \
     vendor/bq/gohan/proprietary/vendor/lib/libFidoCrypto.so:system/vendor/lib/libFidoCrypto.so \
     vendor/bq/gohan/proprietary/vendor/lib/libFIDOKeyProvisioning.so:system/vendor/lib/libFIDOKeyProvisioning.so \
     vendor/bq/gohan/proprietary/vendor/lib/libFidoSuiJNI.so:system/vendor/lib/libFidoSuiJNI.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     vendor/bq/gohan/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/bq/gohan/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
     vendor/bq/gohan/proprietary/vendor/lib/libgdtap.so:system/vendor/lib/libgdtap.so \
@@ -375,6 +403,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libGPreqcancel.so:system/vendor/lib/libGPreqcancel.so \
     vendor/bq/gohan/proprietary/vendor/lib/libGPreqcancel_svc.so:system/vendor/lib/libGPreqcancel_svc.so \
     vendor/bq/gohan/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libHevcSwEncoder.so:system/vendor/lib/libHevcSwEncoder.so \
     vendor/bq/gohan/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/bq/gohan/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/bq/gohan/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
@@ -410,6 +439,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
     vendor/bq/gohan/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmdsprpc.so:system/vendor/lib/libmdsprpc.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
@@ -494,12 +524,23 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_vpu_module.so:system/vendor/lib/libmmcamera_vpu_module.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-dspp-utils.so:system/vendor/lib/libmm-dspp-utils.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmhttpstack.so:system/vendor/lib/libmmhttpstack.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmiipstreammmihttp.so:system/vendor/lib/libmmiipstreammmihttp.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmipstreamnetwork.so:system/vendor/lib/libmmipstreamnetwork.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmipstreamsourcehttp.so:system/vendor/lib/libmmipstreamsourcehttp.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmipstreamutils.so:system/vendor/lib/libmmipstreamutils.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmparser_lite.so:system/vendor/lib/libmmparser_lite.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-qdcm-diag.so:system/vendor/lib/libmm-qdcm-diag.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmsw_detail_enhancement.so:system/vendor/lib/libmmsw_detail_enhancement.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmsw_math.so:system/vendor/lib/libmmsw_math.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmsw_opencl.so:system/vendor/lib/libmmsw_opencl.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmsw_platform.so:system/vendor/lib/libmmsw_platform.so \
     vendor/bq/gohan/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     vendor/bq/gohan/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
@@ -552,9 +593,13 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libSampleAuthJNI.so:system/vendor/lib/libSampleAuthJNI.so \
     vendor/bq/gohan/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/bq/gohan/proprietary/vendor/lib/libscve_mv.so:system/vendor/lib/libscve_mv.so \
     vendor/bq/gohan/proprietary/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libscve_stub.so:system/vendor/lib/libscve_stub.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libscveTextRecoPostProcessing.so:system/vendor/lib/libscveTextRecoPostProcessing.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
     vendor/bq/gohan/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
     vendor/bq/gohan/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
@@ -570,6 +615,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/bq/gohan/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     vendor/bq/gohan/proprietary/vendor/lib/libstlport_sta.so:system/vendor/lib/libstlport_sta.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
     vendor/bq/gohan/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/bq/gohan/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/bq/gohan/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
@@ -601,6 +647,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
     vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
+    vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libpanorama_skel.so:system/vendor/lib/rfsa/adsp/libpanorama_skel.so \
+    vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
+    vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
+    vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
     vendor/bq/gohan/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
     vendor/bq/gohan/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
     vendor/bq/gohan/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
@@ -624,6 +676,5 @@ PRODUCT_PACKAGES += \
     colorservice \
     imssettings \
     com.google.widevine.software.drm \
-    ConnectivityExt \
     qcnvitems \
     qcrilhook

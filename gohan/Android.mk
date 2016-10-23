@@ -175,15 +175,6 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ConnectivityExt
-LOCAL_MODULE_OWNER := bq
-LOCAL_SRC_FILES := proprietary/framework/ConnectivityExt.jar
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := qcnvitems
 LOCAL_MODULE_OWNER := bq
 LOCAL_SRC_FILES := proprietary/framework/qcnvitems.jar

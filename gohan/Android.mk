@@ -39,6 +39,17 @@ LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libqct_resampler
+LOCAL_MODULE_OWNER := bq
+LOCAL_SRC_FILES := proprietary/vendor/lib/libqct_resampler.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := bq
 LOCAL_SRC_FILES := proprietary/vendor/lib/libtime_genoff.so
@@ -144,14 +155,14 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := colorservice
+LOCAL_MODULE := xtra_t_app
 LOCAL_MODULE_OWNER := bq
-LOCAL_SRC_FILES := proprietary/vendor/app/colorservice/colorservice.apk
+LOCAL_SRC_FILES := proprietary/priv-app/xtra_t_app/xtra_t_app.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PROPRIETARY_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -163,15 +174,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := com.google.widevine.software.drm
-LOCAL_MODULE_OWNER := bq
-LOCAL_SRC_FILES := proprietary/framework/com.google.widevine.software.drm.jar
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)

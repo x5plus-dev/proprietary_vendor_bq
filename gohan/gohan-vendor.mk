@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/bin/cnd:system/bin/cnd \
     vendor/bq/gohan/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/bq/gohan/proprietary/bin/dpmd:system/bin/dpmd \
-    vendor/bq/gohan/proprietary/bin/garden_app:system/bin/garden_app \
     vendor/bq/gohan/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/bq/gohan/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
     vendor/bq/gohan/proprietary/bin/imscmservice:system/bin/imscmservice \
@@ -43,7 +42,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/bq/gohan/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/bq/gohan/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/bq/gohan/proprietary/bin/wcnss_service:system/bin/wcnss_service \
     vendor/bq/gohan/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/bq/gohan/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/bq/gohan/proprietary/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:system/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
@@ -117,8 +115,10 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/bq/gohan/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/gohan/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
+    vendor/bq/gohan/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
     vendor/bq/gohan/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/bq/gohan/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
+    vendor/bq/gohan/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/bq/gohan/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/gohan/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/gohan/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
@@ -126,6 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/bq/gohan/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/bq/gohan/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
+    vendor/bq/gohan/proprietary/lib/libwcnss_qmi.so:system/lib/libwcnss_qmi.so \
     vendor/bq/gohan/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/bq/gohan/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/bq/gohan/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
@@ -149,17 +150,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/bq/gohan/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_ad5816g.so:system/vendor/lib/libactuator_ad5816g.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_ad5823.so:system/vendor/lib/libactuator_ad5823.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_bu64244gwz.so:system/vendor/lib/libactuator_bu64244gwz.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_bu64297.so:system/vendor/lib/libactuator_bu64297.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9716.so:system/vendor/lib/libactuator_dw9716.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9761b.so:system/vendor/lib/libactuator_dw9761b.so \
     vendor/bq/gohan/proprietary/vendor/lib/libactuator_dw9800w_cmb087qr.so:system/vendor/lib/libactuator_dw9800w_cmb087qr.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_lc898122.so:system/vendor/lib/libactuator_lc898122.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_lc898212xd.so:system/vendor/lib/libactuator_lc898212xd.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:system/vendor/lib/libactuator_rohm_bu64243gwz.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
@@ -380,7 +371,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_csidtg.so:system/vendor/lib/libmmcamera_csidtg.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_dcrf_lib.so:system/vendor/lib/libmmcamera_dcrf_lib.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_dw9761b_eeprom.so:system/vendor/lib/libmmcamera_dw9761b_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_eeprom_util.so:system/vendor/lib/libmmcamera_eeprom_util.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_eztune_module.so:system/vendor/lib/libmmcamera_eztune_module.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
@@ -425,24 +415,19 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:system/vendor/lib/libmmcamera_isp_sub_module.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_isp_wb40.so:system/vendor/lib/libmmcamera_isp_wb40.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_le2464c_eeprom.so:system/vendor/lib/libmmcamera_le2464c_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_le2464c_master_eeprom.so:system/vendor/lib/libmmcamera_le2464c_master_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_llvd.so:system/vendor/lib/libmmcamera_llvd.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so:system/vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_semco_cat24c64_eeprom.so:system/vendor/lib/libmmcamera_semco_cat24c64_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sunny_8865_eeprom.so:system/vendor/lib/libmmcamera_sunny_8865_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sunny_imx219_d8n03d_eeprom.so:system/vendor/lib/libmmcamera_sunny_imx219_d8n03d_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_truly_cma481_eeprom.so:system/vendor/lib/libmmcamera_truly_cma481_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_truly_imx219_cmb104_eeprom.so:system/vendor/lib/libmmcamera_truly_imx219_cmb104_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_truly_imx298_cmb087qr_eeprom.so:system/vendor/lib/libmmcamera_truly_imx298_cmb087qr_eeprom.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
@@ -452,6 +437,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-dspp-utils.so:system/vendor/lib/libmm-dspp-utils.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-qdcm-diag.so:system/vendor/lib/libmm-qdcm-diag.so \
@@ -461,7 +447,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
     vendor/bq/gohan/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
     vendor/bq/gohan/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/bq/gohan/proprietary/vendor/lib/libOmxAlacDec.so:system/vendor/lib/libOmxAlacDec.so \
     vendor/bq/gohan/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
@@ -475,6 +460,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/bq/gohan/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/bq/gohan/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/bq/gohan/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/bq/gohan/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/bq/gohan/proprietary/vendor/lib/libqisl.so:system/vendor/lib/libqisl.so \
@@ -509,6 +495,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/bq/gohan/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
     vendor/bq/gohan/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
@@ -518,6 +505,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/bq/gohan/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/bq/gohan/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libslimclient.so:system/vendor/lib/libslimclient.so \
     vendor/bq/gohan/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/bq/gohan/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/bq/gohan/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:system/vendor/lib/libSonyIMX298PdafLibrary.so \
@@ -530,6 +518,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/bq/gohan/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
     vendor/bq/gohan/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/bq/gohan/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/bq/gohan/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/bq/gohan/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
@@ -556,7 +545,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
-    libloc_ds_api \
     libqct_resampler \
     libtime_genoff \
     embms \

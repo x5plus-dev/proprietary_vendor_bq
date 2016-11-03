@@ -84,7 +84,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
     vendor/bq/gohan/proprietary/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
     vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_booyi.img:system/etc/firmware/synaptics_firmware_booyi.img \
-    vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_truly.img:system/etc/firmware/synaptics_firmware_truly.img \
+    vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_truly_auo.img:system/etc/firmware/synaptics_firmware_truly_auo.img \
+    vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_truly_lg.img:system/etc/firmware/synaptics_firmware_truly_lg.img \
     vendor/bq/gohan/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
     vendor/bq/gohan/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     vendor/bq/gohan/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
@@ -129,6 +130,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
     vendor/bq/gohan/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/bq/gohan/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
+    vendor/bq/gohan/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    vendor/bq/gohan/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/bq/gohan/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/bq/gohan/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/bq/gohan/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \

@@ -29,6 +29,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/bq/gohan/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/bq/gohan/proprietary/bin/irsc_util:system/bin/irsc_util \
+    vendor/bq/gohan/proprietary/bin/loc_launcher:system/bin/loc_launcher \
+    vendor/bq/gohan/proprietary/bin/lowi-server:system/bin/lowi-server \
     vendor/bq/gohan/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/bq/gohan/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/bq/gohan/proprietary/bin/netmgrd:system/bin/netmgrd \
@@ -41,6 +43,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/bq/gohan/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/bq/gohan/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/bq/gohan/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
+    vendor/bq/gohan/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/bq/gohan/proprietary/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:system/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
     vendor/bq/gohan/proprietary/etc/acdbdata/QRD/QRD_General_cal.acdb:system/etc/acdbdata/QRD/QRD_General_cal.acdb \
     vendor/bq/gohan/proprietary/etc/acdbdata/QRD/QRD_Global_cal.acdb:system/etc/acdbdata/QRD/QRD_Global_cal.acdb \
@@ -93,6 +97,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/firmware/venus-v1.mdt:system/etc/firmware/venus-v1.mdt \
     vendor/bq/gohan/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
+    vendor/bq/gohan/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/bq/gohan/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/bq/gohan/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/bq/gohan/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
@@ -106,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/bq/gohan/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/bq/gohan/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
+    vendor/bq/gohan/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/bq/gohan/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/bq/gohan/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/bq/gohan/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
@@ -114,6 +121,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/bq/gohan/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/gohan/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
+    vendor/bq/gohan/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
     vendor/bq/gohan/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/bq/gohan/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/bq/gohan/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -127,6 +135,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/bq/gohan/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
     vendor/bq/gohan/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+    vendor/bq/gohan/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/bq/gohan/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/bq/gohan/proprietary/vendor/etc/nxp/AcControlParams_SPEAKER.txt:system/vendor/etc/nxp/AcControlParams_SPEAKER.txt \
     vendor/bq/gohan/proprietary/vendor/etc/nxp/LVACFS_Configuration.txt:system/vendor/etc/nxp/LVACFS_Configuration.txt \
@@ -163,6 +172,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/bq/gohan/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/bq/gohan/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
     vendor/bq/gohan/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/bq/gohan/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/bq/gohan/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
@@ -315,6 +327,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/bq/gohan/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/bq/gohan/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libgdtap.so:system/vendor/lib/libgdtap.so \
     vendor/bq/gohan/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/bq/gohan/proprietary/vendor/lib/libGPreqcancel.so:system/vendor/lib/libGPreqcancel.so \
     vendor/bq/gohan/proprietary/vendor/lib/libGPreqcancel_svc.so:system/vendor/lib/libGPreqcancel_svc.so \
@@ -344,9 +357,13 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libllvd_sw_tnr.so:system/vendor/lib/libllvd_sw_tnr.so \
     vendor/bq/gohan/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/bq/gohan/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
+    vendor/bq/gohan/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/bq/gohan/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/bq/gohan/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     vendor/bq/gohan/proprietary/vendor/lib/libloc_xtra.so:system/vendor/lib/libloc_xtra.so \
+    vendor/bq/gohan/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    vendor/bq/gohan/proprietary/vendor/lib/liblowi_wifihal_nl.so:system/vendor/lib/liblowi_wifihal_nl.so \
+    vendor/bq/gohan/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
     vendor/bq/gohan/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/bq/gohan/proprietary/vendor/lib/libmm-als.so:system/vendor/lib/libmm-als.so \
@@ -482,6 +499,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libqti-at.so:system/vendor/lib/libqti-at.so \
     vendor/bq/gohan/proprietary/vendor/lib/libqti-gt.so:system/vendor/lib/libqti-gt.so \
     vendor/bq/gohan/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/bq/gohan/proprietary/vendor/lib/librcc.so:system/vendor/lib/librcc.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
@@ -529,6 +547,9 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/bq/gohan/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/bq/gohan/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
+    vendor/bq/gohan/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/bq/gohan/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/bq/gohan/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
@@ -550,7 +571,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libloc_ds_api \
-    libwpa_qmi_eap_proxy \
     libtime_genoff \
     embms \
     fastdormancy \
@@ -558,8 +578,10 @@ PRODUCT_PACKAGES += \
     shutdownlistener \
     TimeService \
     CNEService \
+    com.qualcomm.location \
     ims \
     qcrilmsgtunnel \
+    xtra_t_app \
     imssettings \
     qcnvitems \
     qcrilhook

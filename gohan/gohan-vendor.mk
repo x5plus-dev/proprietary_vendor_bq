@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/bq/gohan/proprietary/bin/fmconfig:system/bin/fmconfig \
     vendor/bq/gohan/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
+    vendor/bq/gohan/proprietary/bin/gx_fpd:system/bin/gx_fpd \
     vendor/bq/gohan/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/bq/gohan/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
     vendor/bq/gohan/proprietary/bin/imscmservice:system/bin/imscmservice \
@@ -122,7 +123,12 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/bq/gohan/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/bq/gohan/proprietary/lib/hw/camera.msm8952.so:system/lib/hw/camera.msm8952.so \
+    vendor/bq/gohan/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
+    vendor/bq/gohan/proprietary/lib/hw/gxfingerprint.default.so:system/lib/hw/gxfingerprint.default.so \
     vendor/bq/gohan/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
+    vendor/bq/gohan/proprietary/lib/libfp_client.so:system/lib/libfp_client.so \
+    vendor/bq/gohan/proprietary/lib/libfpnav.so:system/lib/libfpnav.so \
+    vendor/bq/gohan/proprietary/lib/libfpservice.so:system/lib/libfpservice.so \
     vendor/bq/gohan/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/bq/gohan/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/bq/gohan/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
@@ -131,7 +137,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/bq/gohan/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/bq/gohan/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
-    vendor/bq/gohan/proprietary/lib/libwcnss_qmi.so:system/lib/libwcnss_qmi.so \
     vendor/bq/gohan/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/bq/gohan/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/bq/gohan/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
@@ -333,7 +338,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libGPreqcancel.so:system/vendor/lib/libGPreqcancel.so \
     vendor/bq/gohan/proprietary/vendor/lib/libGPreqcancel_svc.so:system/vendor/lib/libGPreqcancel_svc.so \
     vendor/bq/gohan/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/bq/gohan/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/bq/gohan/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \

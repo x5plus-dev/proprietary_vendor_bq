@@ -131,7 +131,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/bq/gohan/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/bq/gohan/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
-    vendor/bq/gohan/proprietary/lib/libwcnss_qmi.so:system/lib/libwcnss_qmi.so \
     vendor/bq/gohan/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/bq/gohan/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/bq/gohan/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
@@ -333,7 +332,6 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/vendor/lib/libGPreqcancel.so:system/vendor/lib/libGPreqcancel.so \
     vendor/bq/gohan/proprietary/vendor/lib/libGPreqcancel_svc.so:system/vendor/lib/libGPreqcancel_svc.so \
     vendor/bq/gohan/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-    vendor/bq/gohan/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/bq/gohan/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/bq/gohan/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/bq/gohan/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \

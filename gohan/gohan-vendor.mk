@@ -80,7 +80,8 @@ PRODUCT_COPY_FILES += \
     vendor/bq/gohan/proprietary/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
     vendor/bq/gohan/proprietary/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
     vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_booyi.img:system/etc/firmware/synaptics_firmware_booyi.img \
-    vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_truly.img:system/etc/firmware/synaptics_firmware_truly.img \
+    vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_truly_auo.img:system/etc/firmware/synaptics_firmware_truly_auo.img \
+    vendor/bq/gohan/proprietary/etc/firmware/synaptics_firmware_truly_lg.img:system/etc/firmware/synaptics_firmware_truly_lg.img \
     vendor/bq/gohan/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
     vendor/bq/gohan/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
     vendor/bq/gohan/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
